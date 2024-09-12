@@ -121,5 +121,27 @@
         <div></div>
     </div>
 
+    <!-- JS Para os emitir sons ao pressionar os botões da tv -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        //Audio "ligar" Starts
+        var ligar = new Audio('som-ligar.mp3')
+        $(".ligar").mousedown(function() {
+            ligar.load();
+            ligar.play();
+        });
+        //Audio "ligar" Ends
+
+        //Audio "desligar" Starts
+        var desligar = new Audio('som-desligar.mp3')
+        $(".desligar").mousedown(function() {
+            desligar.load();
+            desligar.play();
+        });
+        //Audio "desligar" Ends
+        });
+    </script>
+
 </body>
 </html>
