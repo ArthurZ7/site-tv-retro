@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url(../img/cursor-pixel\ -\ Copia.png), default;
+    
+}
+*:active {
+    cursor: url(../img/cursor-pixel-active-copia.png), default;
+    transition: 1s;
 }
 
 body {
@@ -31,7 +37,7 @@ body {
 .screen {
     width: 95%;
     height: 95%;
-    background-color: #5D94FB;
+    background-color: #BEBACB;
     background-image: url(../img/.jpg);
     background-repeat: no-repeat;
     background-size: 85%;
@@ -41,7 +47,11 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    font-family: "Press Start 2P";
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.bg-azul {
+    background-color: #5D94FB;
 }
 
 .screen h1 {
@@ -97,11 +107,12 @@ nav ul {
     border-top-right-radius: 200px ;
     border-bottom: 10px solid #4B0082;
     justify-content: center;
-    padding-left: 80px;
+    padding-left: 85px;
 }
 
 nav ul li {
     display: inline-block;
+    margin: 0 -8px;
 }
 
 nav ul li a{
@@ -112,12 +123,12 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    background-color: #616161;
+    background-color: #51504B;
     color: white;
     background-position: 5px 55%;
     background-size: 40px;
     padding-left: 50px;
-    transition: 0.3s;
+    transition: 0.5s;
     transition-timing-function: ease;
 }
 
@@ -134,7 +145,24 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
-/* HOME */
+footer {
+    background-color: black;
+    border-bottom-left-radius: 2000px ;
+    border-bottom-right-radius: 2000px ;
+    padding: 25px;
+    bottom: 13.9%;
+    left: 3.7%;
+    width: 92.6%;
+    position: fixed;
+}
+
+footer h3 {
+    font-size: 10px;
+    color: gray;
+}
+
+
+/* PÁGINA INICIO */
 
 .inicio h1 {
     margin-top: 150px;
@@ -150,7 +178,7 @@ nav ul li a:hover {
 .inicio ul {
     padding-top: 50px;
     padding-left: 55px;
-    list-style-type: none
+    list-style-type: none;
 }
 
 .inicio ul li {
@@ -182,7 +210,7 @@ nav ul li a:hover {
 }
 
 
-/*  LISTA JOGOS */
+/* PÁGINA JOGOS */
 
 .lista-jogos > div > div { 
     width: 430px; 
@@ -205,7 +233,7 @@ nav ul li a:hover {
 }
 
 .lista-jogos h1 {
-    margin: 50px 0px 30px 0px;
+    margin: 30px 0px 10px 0px;
     font-size: 35px;
     color: white;
     text-shadow: 5px 5px #222;
@@ -248,7 +276,6 @@ a.card-game-link {
 }
 
 /* JOGO */
-
 .bg-jogo {
     background-color: #333;
 }
@@ -258,19 +285,78 @@ a.card-game-link {
 }
 
 
+/* PAG HISTÓRIA */
 
-footer {
-    background-color: black;
-    border-bottom-left-radius: 2000px ;
-    border-bottom-right-radius: 2000px ;
-    padding: 25px;
-    bottom: 13.9%;
-    left: 3.7%;
-    width: 92.6%;
-    position: fixed;
+.historia{
+    width: 100%;
+    height: 530px;
+    margin: 15px -10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    flex-direction: column;
 }
 
-footer h3 {
-    font-size: 10px;
-    color: gray;
+.historia::-webkit-scrollbar {
+    width: 12px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.historia::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #4b0082, #460a73, #401165, #3a1557, #341849, #31163d, #2d1531, #271427, #21101d, #1b0c14, #11060a, #000000);
+    border-radius: 4px;
+}
+
+.historia > .container {
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+}
+
+.historia > .container > div{
+    width: 50%;
+    padding: 20px;
+}
+
+.historia > .container > div:nth-last-of-type(2){
+    padding: 20px;
+}
+
+h1 {
+    padding: 30px 0;
+    font-size: 25px;
+    color: white;
+    text-shadow: 4px 4px #222;
+}
+
+.historia h2 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #4B0082;
+    text-shadow: 3px 2px white;
+}
+
+.historia p {
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.historia img {
+    width: 300px;
+    border: 4px solid rgb(75, 0, 130);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+}
+
+.historia hr {
+    margin: auto;
+    margin: 20px auto;
+    width: 30%;
+    border-color: #4B0082;
+    background-color: #4B0082;
+    border-radius: 100px;
 }
