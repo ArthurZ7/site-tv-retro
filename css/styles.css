@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url(../img/cursor-pixel\ -\ Copia.png), default;
+    cursor: url(../img/cursor-pixel.png), default;
     
 }
 *:active {
-    cursor: url(../img/cursor-pixel-active-copia.png), default;
+    cursor: url(../img/cursor-pixel-active.png), default;
     transition: 1s;
 }
 
