@@ -17,7 +17,7 @@ Dentro da "TV" é exibida as opções para dar "início" ao jogo
 
 ![Print Jogos](/img/print-jogos.png)
 
-Como um videogame, é exibido as opções de jogos disponíveis, sendo 3 clássicos dos anos 80. <br><br>
+Como dentro de um emulado de videogame, é exibido as opções de jogos disponíveis, sendo 3 clássicos dos anos 80. <br><br>
 Ao clicar em algum jogo, é redirecionado a outra página referente a um emulador funcional do respectivo jogo 
 
 ### Página Jogos
@@ -35,5 +35,5 @@ Ao clicar em algum jogo, é redirecionado a outra página referente a um emulado
 ### Página História 
 ![Página História](/img/print-historia.png)
 
-Descreve em ordem cronológica os principais videogames antes do ano de 2000
+Descreve em ordem cronológica os principais videogames antes do ano 2000
 
