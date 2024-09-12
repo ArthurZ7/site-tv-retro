@@ -182,11 +182,11 @@ footer a:hover {
 }
 
 .inicio > div {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .inicio ul {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 55px;
     list-style-type: none;
 }
@@ -198,13 +198,14 @@ footer a:hover {
     text-decoration: none;
     color: white;
     padding: 35px 50px;
-    font-size: 20px;
+    font-size: 25px;
+    text-shadow: 3px 3px rgb(87, 87, 87);
 }
 
 .inicio ul li a:hover {
     transform: scale(1.2);
     color: #4B0082;
-    text-shadow: 1px 1px 4px white;
+    text-shadow: 1px 1px white;
     background-position: 4px 50%;
     background-size: 40px;
     transition: 0.3s;
